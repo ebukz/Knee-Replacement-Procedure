@@ -1,0 +1,75 @@
+---
+title: "PU5558-assessment1"
+author: "52104039"
+output: pdf_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Load necessary packages
+
+It is good practice to load the packages to be used before commencing analysis and coding.
+```{r load-packages}
+library(tidyverse)    # for general data science
+library(tidymodels)   # for machine learning
+library(readr)
+```  
+
+## Load chosen dataset
+
+The dataset chosen for this project is the Knee Replacement Procedure dataset.
+
+```{r read-data}
+knee_data <- "input/Knee Replacement CCG 2021.csv" %>% read.csv()
+
+glimpse(knee_data)
+summary(knee_data)
+```
+
+## Dataset description
+
+the dataset to be used contains Provisional Patient Reported Outcome Measures(PROMS)before and after a knee replacement surgery which took place in England, from April 2020 to March 2021
+
+## Suitable machine learning algorithm for three questions:
+
+1. Before the operation, can we estimate the post-operative EQ5D index for a patient?
+
+
+2. Before the operation, can we predict how much pain a patient will have after the operation?
+
+
+3. Before the operation, can we calculate how many patients have had previous surgery? 
+
+
+
+
+## Model building to answer chosen question
+
+1.	Data splitting
+
+```{r}
+
+```
+
+2.	Selection and preprocessing of predictors
+
+```{r}
+
+```
+
+3.	Model specification and training
+
+```{r}
+
+```
+
+4.	Model evaluation
+
+```{r}
+
+```
+
+## Limitations of machine learning model
+
